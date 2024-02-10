@@ -20,7 +20,7 @@ class AddForm extends Component {
                     <input type="text" placeholder="Title..."/>
                     <input type="text" placeholder="About..."/>
                 </div>
-                <button className="button_form">
+                <button className="button button_form">
                     +
                 </button>
             </form>

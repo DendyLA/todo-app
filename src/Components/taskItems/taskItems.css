@@ -1,0 +1,14 @@
+.task{
+    margin-top: 33px;
+}
+.task__item{
+    width: 345px;
+    height: 72px;
+    background-color: #242320;
+    border: 2px solid #A35709;
+    margin-top: 16px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 16px 16px 10px;
+}
