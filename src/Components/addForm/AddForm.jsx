@@ -12,13 +12,28 @@ class AddForm extends Component {
         about: ''
     }
 
-    render() {
+    
+    onChangeTitle = (e) => {
+        this.setState({
+            title: e.target.value
+        })
+        this.props.onChangeTitle(e.target.value)
+    }
 
+    onChangeAbout = (e) => {
+        this.setState({
+            about: e.target.value
+        })
+        this.props.onChangeAbout(e.target.value)
+    }
+
+    render() {
+        const {onAddTask} = this.props;
         return(
-            <form action="" className="addingForm">
+            <form action="" className="addingForm" onSubmit={onAddTask}>
                 <div className="addingForm__input">
-                    <input type="text" placeholder="Title..."/>
-                    <input type="text" placeholder="About..."/>
+                    <input value={this.state.title} onChange={this.onChangeTitle} type="text" placeholder="Title..."/>
+                    <input value={this.state.about} onChange={this.onChangeAbout} type="text" placeholder="About..."/>
                 </div>
                 <button className="button button_form">
                     +

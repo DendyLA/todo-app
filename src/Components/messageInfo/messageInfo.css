@@ -1,0 +1,19 @@
+.message{
+    width: 100px;
+    height: 53px;
+    color: white;
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.message__content{
+    margin-top: 12px;
+}
+
+.message span{
+    display: inline-block;
+    width: 64px;
+    height: 2px;
+    background-color: #FF8303;
+    margin-left: 10px;
+}
